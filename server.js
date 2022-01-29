@@ -4,6 +4,8 @@ const port=process.env.PORT||8000;
 const ejs=require('ejs');
 const expressLayout=require('express-ejs-layouts');
 const path=require('path');
+// assets
+app.use(express.static('public'));
 app.get('/',function(req,res){
     // res.send("Hello from server");
     // for page

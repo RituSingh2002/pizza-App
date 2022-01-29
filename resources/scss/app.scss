@@ -1,0 +1,36 @@
+@import './varable';
+// $primary:red ;
+body{
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: $dark;
+    height: 400px;
+}
+nav li:last-child a{
+    background-color: $primary;
+    &:hover{
+        background-color: $primary-hover;
+    }
+}
+nav li a{
+    transition: all .3s ease-in-out;
+    &:hover{
+        color: $primary;
+    }
+}
+section.hero{
+    background: $secondary;
+}
+.size{
+    background: $secondary;
+}
+.add-to-card{
+    border: 2px solid $primary;
+    color: $primary;
+    transform: $smooth;
+    &:hover{
+        background: $primary;
+        border-color: $pure;
+        color: $pure;
+    }
+}
